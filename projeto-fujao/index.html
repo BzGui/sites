@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão Fujão</title>
+    <style>
+        html,body{
+            position: relative;
+            width: 97vw;
+            height: 97vh;
+            background-color: #aa2200;
+        }
+        section{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -80%);
+            text-align: center;
+        }
+        div#pgt{
+            width: 600px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2.4em;
+            color: #111100;
+            text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+        }
+        #emoji{
+            font-size: 2em;
+        }
+        .btn{
+            margin: 20px;
+            width: 150px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: 2em;
+            padding: 5px;
+            border-radius: 50ch;
+            background-color: #662222;
+            color: white;
+            border: none;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.600);
+        }
+        .btn:hover{
+            background-color: #882222;
+            border: 2px solid #662222;
+        }
+        #btn1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-125%,0px);
+        }
+        #btn2{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(25%,0px);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <audio src="aplausos.mp3" id="audio">
+        </audio>
+        <div id="pgt">
+            <p>Quer me dar o <span id="emoji">&#x1F44C;</span> Hoje ?</p>
+        </div>
+    </section>
+    <input type="button" value="SIM!" class="btn" name="btn1" id="btn1" onclick="playAudio()">
+    <input type="button" value="NÃO!" class="btn" name="btn2" id="btn2" onmouseenter="fugir()">
+    <script>
+        function playAudio(){
+            let audio = document.getElementById('audio')
+            audio.play();
+        }
+        function fugir(){
+            let btn = document.getElementById('btn2')
+            let rand1 = Math.floor(Math.random() * 100) + 1
+            let rand2 = Math.floor(Math.random() * 100) + 1
+            btn.style.top = `${rand1}%`
+            btn.style.left = `${rand2}%`
+        }
+    </script>
+</body>
+</html>
