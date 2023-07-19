@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <main>
         <section>
-            <div id="form">
-                <p>Bem-vindo</p>
-                <input type="email" name="email" id="email">
-                <input type="password" name="senha" id="senha">
-                <input type="submit" value="Login" action="enviar.php">
-            </div>
             <div id="img">
 
+            </div>
+            <div id="form">
+                <h1>Login</h1>
+                <p>Bem-vindo</p>
+                <input type="email" name="email" id="email">
+                <form action="login.php">
+                    <input type="password" name="senha" id="senha">
+                    <input type="submit" value="Entrar">
+                </form>
             </div>
         </section>
     </main>
