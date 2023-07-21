@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
@@ -16,10 +17,22 @@
             <div id="form">
                 <h1>Login</h1>
                 <p>Bem-vindo</p>
-                <input type="email" name="email" id="email">
-                <form action="login.php">
-                    <input type="password" name="senha" id="senha">
+                <form action="login.php" autocomplete="on">
+                    <div class="campo">
+                        <input type="email" name="email" id="iemail" placeholder="Digite o Login" required autocomplete="email">
+                        <label for="iemail">
+                            <span class="material-icons">person</span>
+                        </label>
+                    </div>
+                    <div class="campo">
+                        <input type="password" name="senha" id="isenha" placeholder="Digite a Senha" required minlength="6" maxlength="20" autocomplete="current-password">
+                        <label for="isenha">
+                            <span class="material-icons">key</span>
+                        </label>
+                    </div>
                     <input type="submit" value="Entrar">
+                    <a href="esqueci.html">Esqueci a Senha</a>
+                    <span class="material-icons">mail</span>
                 </form>
             </div>
         </section>
