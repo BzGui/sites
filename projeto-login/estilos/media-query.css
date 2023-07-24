@@ -6,7 +6,7 @@
     }
     section{
         width: 85vw;
-        height: 80vh;
+        height: 250px;
     }
     div#img{
         float: left;
@@ -30,7 +30,7 @@
     }
     section{
         width: 900px;
-        height: 400px;
+        height: 250px;
     }
     div#img{
         float: right;
