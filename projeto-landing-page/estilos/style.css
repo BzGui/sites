@@ -34,7 +34,7 @@ strong{
     display: flex;
     justify-content: center;
     position: fixed;
-    top: 10px;
+    top: 0px;
 }
 
 .nav-bar{
@@ -46,6 +46,7 @@ strong{
     height: 50px;
     border-radius: 25px;
     font-size: 2em;
+    margin-top: 10px;
 }
 
 .nav-link{
@@ -68,12 +69,82 @@ strong{
 .menu-toggle{
     display: flex;
     align-items: center;
-    color: var(--white);
     margin: 15px;
+    font-size: .8em;
 }
 
-.menu-toggle > span{
-    font-size: .9em;
+.menu-toggle > button{
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.menu-hide{
+    transition: .5s;
+    display: none;
+}
+
+.menu-open{
+    transition: .5s;
+    display: block;
+}
+
+.background-blur{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #003e4dcc;
+}
+
+.nav-menu{
+    position: absolute;
+    width: 90%;
+    background-color: #002832ec;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.678);
+}
+
+.close-container{
+    text-align: right;
+}
+
+.close-btn{
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 2em;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.close-btn:hover{
+    font-size: 2.2em;
+    transition: .1s;
+}
+
+.nav-items{
+    text-align: center;
+    list-style: none;
+}
+
+.nav-list-item{
+    margin-bottom: 10px;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.nav-item{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: var(--white);
+}
+.nav-item:hover{
+    transition: .1s;
+    font-size: 1.7em;
 }
 
 .about{
@@ -84,11 +155,12 @@ strong{
     font-size: 2.5em;
     font-weight: bold;
     text-align: center;
+    padding: 10px;
 }
 
 .about-text{
     max-width: 400px;
-    text-align: center;
+    text-align: justify;
     margin: auto;
     margin-top: 25px;
 }
@@ -137,23 +209,6 @@ strong{
     margin: 20px auto;
     border-radius: 20px;
 }
-.photo-arrow-icon{
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background-color: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    transform: translate(105px, 300px);
-}
-
-.photo-arrow-icon > span{
-    font-size: 5em;
-    color: var(--dark-2);
-    font-weight: bold;
-}
 
 .social-medias{
     display: flex;
@@ -173,6 +228,7 @@ strong{
 
 .social-media-icons-wrapper{
     margin: 5px;
+    color: var(--dark-1);
 }
 
 .social-media-icon:visited{
