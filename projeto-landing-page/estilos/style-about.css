@@ -147,67 +147,29 @@ strong{
     font-size: 1.7em;
 }
 
-.about{
-    margin-top: 70px;
+main{
+    margin-top: 60px;
+    text-align: center;
 }
 
+.about-photo{
+    padding-top: 10px;
+    height: 200px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.507);
+}
+
+.photo-img{
+    width: 180px;
+    max-height: 180px;
+    border-radius: 50%;
+}
 .about-title{
-    font-size: 2.5em;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px;
+    margin-top: 10px;
 }
 
 .about-text{
-    max-width: 400px;
     text-align: justify;
-    margin: auto;
-    margin-top: 25px;
-}
-.button-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-}
-.button{
-    padding: 7px;
-    background-color: var(--dark-2);
-    text-decoration: none;
-    color: var(--white);
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.button:hover{
-    transition: .1s;
-    background-color: var(--white);
-    border: 2px solid var(--dark-1);
-    color: var(--dark-1);
-}
-
-.light{
-    background-color: var(--white);
-    border: 2px solid var(--dark-1);
-    color: var(--dark-1);
-}
-
-.light:hover{
-    transition: .1s;
-    background-color: var(--dark-2);
-    border: none;
-    color: var(--white);
-}
-
-.photo{
-    background-image: url(../assets/images/eu.png);
-    background-size: cover;
-    background-color: var(--contrast);
-    max-width: 300px;
-    height: 350px;
-    margin: 20px auto;
-    border-radius: 20px;
+    padding: 10px;
 }
 
 .social-medias{
