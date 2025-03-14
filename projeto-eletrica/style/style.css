@@ -165,8 +165,7 @@ html,body{
     margin-bottom: 10px;
 }
 
-.third-section{
-    height: 700px;
+.services{
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -174,7 +173,7 @@ html,body{
 }
 
 .slider{
-    width: 800px;
+    width: 485px;
     height: 400px;
     overflow: hidden;
 }
@@ -195,10 +194,14 @@ html,body{
     transition: .5s;
 }
 
+.slide img{
+    height: 100%;
+}
+
 .manual-navigation{
     position: absolute;
     margin-top: -40px;
-    width: 800px;
+    width: 485px;
     display: flex;
     justify-content: center;
 }
@@ -238,7 +241,7 @@ html,body{
 .navigation-auto{
     position: absolute;
     margin-top: 360px;
-    width: 800px;
+    width: 485px;
     display: flex;
     justify-content: center;
 }
