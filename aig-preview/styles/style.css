@@ -13,7 +13,37 @@ body{
 
 main{
     width: 100%;
-    height: 85%;
+    height: calc(85% - 12rem);
+    padding-top: 200px;
     background-image: url(../assets/main_background.jpg);
     background-size: cover;
+}
+
+.main_text_container{
+    width: 800px;
+    margin-left: 10rem;
+    color: #efefef;
+}
+
+.main_text_container > h1{
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.main_text_container  p{
+    margin-top: 1rem;
+}
+
+.content_btn{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f56429;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.content_btn:visited{
+    color: #efefef;
 }
