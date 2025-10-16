@@ -27,10 +27,15 @@
 .social_icon{
     text-decoration: none;
     cursor: pointer;
+    color: #555;
 }
 
 .social_icon:visited{
     color: #555;
+}
+
+.social_icon:hover{
+    color: #f56429;
 }
 
 .footer_line_container{

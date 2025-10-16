@@ -5,6 +5,13 @@
    font-family: 'Inter', sans-serif;
 }
 
+.mobile{
+    display: none;
+}
+.desktop{
+    display: block;
+}
+
 body{
     width: 100%;
     height: 100vh;
@@ -42,6 +49,11 @@ main{
     font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
+}
+
+.content_btn:hover{
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
 }
 
 .content_btn:visited{
