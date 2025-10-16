@@ -14,4 +14,12 @@
     .main_text_container{
         margin: 10px;
     }
+
+    .copyright{
+        font-size: .6rem;
+    }
+
+    .footer_line_container{
+        display: none;
+    }
 }

@@ -1,0 +1,49 @@
+.menu_button_container{
+    position: fixed;
+    top: 7.5rem;
+    right: .5rem;
+    font-size: 1.7rem;
+    padding: 2px 7px 2px 7px;
+    background-color: #f56429;
+    color: #efefef;
+    text-align: center;
+    border: none;
+    z-index: 1;
+}
+
+.menu_button_container:hover{
+    transform: translate(-3px, -3px);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.menu_hamb_container{
+    position: fixed;
+    top: 7.5rem;
+    right: .5rem;
+    padding-top: 40px;
+    background-color: #f56429;
+}
+
+.menu_hamb{
+    background-color: #efefef;
+    box-shadow: inset 0px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+.menu_hamb ul{
+    list-style: none;
+}
+
+.menu_hamb li{
+    padding: 10px;
+}
+
+.menu_hamb li:not(:last-child){
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+.menu_hamb a{
+    text-decoration: none;
+    color: #777;
+    font-size: 1.3rem;
+    font-weight: bold;
+}

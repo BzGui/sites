@@ -22,6 +22,7 @@ main{
     width: 100%;
     height: calc(85% - 12rem);
     padding-top: 200px;
+    margin-top: 7rem;
     background-image: url(../assets/main_background.jpg);
     background-size: cover;
 }
@@ -46,6 +47,7 @@ main{
     margin-top: 30px;
     padding: 20px;
     background-color: #f56429;
+    color: #efefef;
     font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
