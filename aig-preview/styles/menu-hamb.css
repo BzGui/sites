@@ -1,17 +1,18 @@
-.menu_button_container{
+#menu_button_container{
     position: fixed;
     top: 7.5rem;
     right: .5rem;
     font-size: 1.7rem;
     padding: 2px 7px 2px 7px;
-    background-color: #f56429;
-    color: #efefef;
+    background-color: #efefef;
+    color: #555;
     text-align: center;
     border: none;
+    border: 2px solid #f56429;
     z-index: 1;
 }
 
-.menu_button_container:hover{
+#menu_button_container:hover{
     transform: translate(-3px, -3px);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
@@ -20,13 +21,24 @@
     position: fixed;
     top: 7.5rem;
     right: .5rem;
-    padding-top: 40px;
     background-color: #f56429;
+    text-align: end;
+}
+
+#close_menu_button{
+    font-size: 1.7rem;
+    padding: 2px 7px 2px 7px;
+    background-color: transparent;
+    color: #efefef;
+    text-align: center;
+    border: none;
+    
 }
 
 .menu_hamb{
     background-color: #efefef;
     box-shadow: inset 0px 3px 2px rgba(0, 0, 0, 0.5);
+    text-align: start;
 }
 
 .menu_hamb ul{
@@ -46,4 +58,33 @@
     color: #777;
     font-size: 1.3rem;
     font-weight: bold;
+}
+
+.open{
+    display: block;
+    animation: openMenuAnimation .5s;
+}
+
+.close{
+    display: none;
+}
+
+@keyframes openMenuAnimation {
+    from{
+        right: -123px;
+    }
+
+    to{
+        right: .5rem;
+    }
+}
+
+@keyframes closeMenuAnimation {
+    from{
+        right: .5rem;
+    }
+
+    to{
+        right: -123px;
+    }
 }

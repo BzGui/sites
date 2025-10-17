@@ -1,10 +1,8 @@
 *, html{
    padding: 0px;
-   margin: 0px; 
-
+   margin: 0px;
    font-family: 'Inter', sans-serif;
 }
-
 .mobile{
     display: none;
 }
@@ -20,7 +18,7 @@ body{
 
 main{
     width: 100%;
-    height: calc(85% - 12rem);
+    height: 70%;
     padding-top: 200px;
     margin-top: 7rem;
     background-image: url(../assets/main_background.jpg);

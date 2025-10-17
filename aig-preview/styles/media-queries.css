@@ -1,11 +1,11 @@
-@media (max-width: 768px) {
+@media (max-width: 765px) {
     .desktop{display: none;}
     .mobile{display: block;}
     .header_menu_container{
         display: none;
     }
     main{
-        height: 85%;
+        height: 100%;
         display: flex;
         padding-top: 0px;
         background-position: right bottom;
@@ -22,4 +22,9 @@
     .footer_line_container{
         display: none;
     }
+}
+
+@media (min-width: 766px) {
+    .desktop{display: block;}
+    .mobile{display: none;}
 }
