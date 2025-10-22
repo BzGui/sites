@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="https://kit.fontawesome.com/ff64c3819a.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="styles/trabalhando.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/menu-hamb.css">
     <link rel="stylesheet" href="styles/media-queries.css">
+
     <title>AIG Eletricidade</title>
 </head>
 <body>
@@ -18,13 +22,31 @@
         <div class="header_menu_container">
             <nav class="menu">
                 <ul>
-                    <li><a href="#">Início</a></li>
+                    <li><a href="index.html">Início</a></li>
                     <li><a href="trabalhando.html">Sobre Nós</a></li>
                     <li><a href="trabalhando.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
         <div class="header_quote_container"><a href="#">Pedir um <br> Orçamento</a></div>
+
+        <button id="menu_button_container" class="mobile" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div id="menu_hamb_container" class="menu_hamb_container close">
+            <button id="close_menu_button" onclick="closeMenu()">
+            <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <nav class="menu_hamb">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="trabalhando.html">Sobre Nós</a></li>
+                    <li><a href="trabalhando.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        <script src="js/menu_hamb.js"></script>
     </header>
 
     <div class="main">
