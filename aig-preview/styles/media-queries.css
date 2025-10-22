@@ -22,6 +22,15 @@
     .footer_line_container{
         display: none;
     }
+
+    .main{
+        flex-direction: column;
+        justify-content: end;
+    }
+    .trab_image{
+        margin-top: 40px;
+        width: 200px;
+    }
 }
 
 @media (min-width: 766px) {
