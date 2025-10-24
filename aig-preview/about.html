@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
     <script src="https://kit.fontawesome.com/ff64c3819a.js" crossorigin="anonymous"></script>
 
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/media-queries.css">
     <link rel="stylesheet" href="styles/menu-hamb.css">
-    <title>AIG Eletricidade</title>
+    <link rel="stylesheet" href="styles/media-queries.css">
+
+    <title>AIG Eletricidade | Sobre Nós</title>
 </head>
+
 <body>
     <header class="header_container">
         <div class="header_logo_container">
@@ -39,7 +37,7 @@
         </button>
         <div id="menu_hamb_container" class="menu_hamb_container close">
             <button id="close_menu_button" onclick="closeMenu()">
-            <i class="fa-solid fa-xmark"></i>
+                <i class="fa-solid fa-xmark"></i>
             </button>
 
             <nav class="menu_hamb">
@@ -53,17 +51,31 @@
         <script src="js/menu_hamb.js"></script>
     </header>
 
-    
+    <main class="about_main">
+        <section class="about_text">
+            <div class="about_image_mobile mobile">
+                <img src="assets/about-image.jpg" alt="">
+            </div>
 
-    <main class="index_main">
-        <div class="main_text_container">
-            <p class="desktop"><i class="fa-solid fa-bolt"></i> Conheça nossos serviços - Faça um orçamento sem compromisso.</p>
-            <p class="mobile"><i class="fa-solid fa-bolt"></i> Conheça nossos serviços - Faça um orçamento.</p>
-            <h1 class="desktop">Soluções elétricas <br> com segurança e eficiência</h1>
-            <h1 class="mobile">Soluções elétricas</h1>
-            <p class="desktop">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates repellendus porro numquam consequuntur. Excepturi!</p>
-            <a href="trabalhando.html" class="content_btn">Entre em contato</a>
-        </div>
+            <div class="about_text_container">
+                <h1>SOBRE NÓS</h1>
+                <p>Somos a AIG Eletricidade, uma empresa familiar com tradição e compromisso no setor de elétrica
+                    industrial e automação. Desde nossa fundação, trabalhamos com o propósito de oferecer soluções seguras,
+                    eficientes e personalizadas para cada cliente, sempre unindo experiência técnica e atendimento
+                    humanizado.
+                    Com uma trajetória construída sobre valores como confiança, qualidade e inovação, crescemos ao lado de
+                    nossos clientes e parceiros, acompanhando a evolução tecnológica e as demandas da indústria moderna.
+                    Nossa equipe é formada por profissionais qualificados e apaixonados pelo que fazem, prontos para
+                    desenvolver projetos, instalações e manutenções que garantem o melhor desempenho e segurança dos
+                    sistemas elétricos e automatizados.
+                    Mais do que prestar serviços, acreditamos em construir relacionamentos duradouros, baseados na
+                    transparência e no respeito. É assim que transformamos cada desafio em uma oportunidade de entregar
+                    resultados que fazem a diferença. <br><br><br><br></p>
+            </div>
+        </section>
+        <section class="about_image">
+            <div class="about_image_container"><img src="assets/about-image.jpg" alt=""></div>
+        </section>
     </main>
 
     <footer class="footer_container">
@@ -80,4 +92,5 @@
         </div>
     </footer>
 </body>
+
 </html>
